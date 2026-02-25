@@ -1,0 +1,15 @@
+{
+  "name": "endorphina-links",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "One-page social media link hub for Endorphina",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.4.1"
+  }
+}

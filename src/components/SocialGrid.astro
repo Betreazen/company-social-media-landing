@@ -1,0 +1,33 @@
+---
+/**
+ * SocialGrid — Reads links.json and renders a SocialCard for each entry.
+ */
+import SocialCard from './SocialCard.astro';
+import links from '../data/links.json';
+
+interface LinkItem {
+  id: string;
+  title: string;
+  url: string;
+  icon: string;
+  brandColor: string;
+  glowColor: string;
+  gradientColors?: string[];
+}
+
+const socialLinks: LinkItem[] = links;
+---
+
+<nav class="social-grid" aria-label="Social media links">
+  {socialLinks.map((link) => (
+    <SocialCard
+      id={link.id}
+      title={link.title}
+      url={link.url}
+      icon={link.icon}
+      brandColor={link.brandColor}
+      glowColor={link.glowColor}
+      gradientColors={link.gradientColors}
+    />
+  ))}
+</nav>

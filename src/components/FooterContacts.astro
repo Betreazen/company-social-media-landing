@@ -1,0 +1,36 @@
+---
+/**
+ * FooterContacts — Displays the contact email and copyright notice.
+ * Update the email address below to change the contact info.
+ */
+const contactEmail = 'mail@endorphina.com';
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer-contacts">
+  <div class="footer-contacts__divider" aria-hidden="true"></div>
+  <a
+    href={`mailto:${contactEmail}`}
+    class="footer-contacts__email"
+    aria-label={`Send email to ${contactEmail}`}
+  >
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    </svg>
+    {contactEmail}
+  </a>
+  <p class="footer-contacts__copyright">
+    &copy; {currentYear} Endorphina. All rights reserved.
+  </p>
+</footer>

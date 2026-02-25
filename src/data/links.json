@@ -1,0 +1,43 @@
+[
+  {
+    "id": "linkedin",
+    "title": "LinkedIn",
+    "url": "https://www.linkedin.com/company/endorphina",
+    "icon": "/assets/icons/linkedin.svg",
+    "brandColor": "#0a6ab5",
+    "glowColor": "#0A66C2"
+  },
+  {
+    "id": "instagram",
+    "title": "Instagram",
+    "url": "https://www.instagram.com/endorphina_games",
+    "icon": "/assets/icons/instagram.svg",
+    "brandColor": "#E1306C",
+    "gradientColors": ["#833AB4", "#FD1D1D", "#FCAF45"],
+    "glowColor": "#E1306C"
+  },
+  {
+    "id": "facebook",
+    "title": "Facebook",
+    "url": "https://www.facebook.com/endorphinagames",
+    "icon": "/assets/icons/facebook.svg",
+    "brandColor": "#1877F2",
+    "glowColor": "#1877F2"
+  },
+  {
+    "id": "x",
+    "title": "X",
+    "url": "https://x.com/EndorphinaGames",
+    "icon": "/assets/icons/x.svg",
+    "brandColor": "#000000",
+    "glowColor": "#FFFFFF"
+  },
+  {
+    "id": "youtube",
+    "title": "YouTube",
+    "url": "https://www.youtube.com/@EndorphinaGames",
+    "icon": "/assets/icons/youtube.svg",
+    "brandColor": "#cc1a1a",
+    "glowColor": "#FF0000"
+  }
+]

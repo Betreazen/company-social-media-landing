@@ -1,0 +1,47 @@
+---
+/**
+ * SocialCard — A single clickable square card linking to a social media channel.
+ * Each card has its own branded background color with neon glow hover effect.
+ */
+interface Props {
+  id: string;
+  title: string;
+  url: string;
+  icon: string;
+  brandColor: string;
+  glowColor: string;
+  gradientColors?: string[];
+}
+
+const { id, title, url, icon, brandColor, glowColor, gradientColors } = Astro.props;
+
+// Build background style - gradient if provided, otherwise solid brand color with overlay
+let backgroundStyle: string;
+if (gradientColors && gradientColors.length > 1) {
+  backgroundStyle = `linear-gradient(135deg, ${gradientColors.join(', ')})`;
+} else {
+  backgroundStyle = brandColor;
+}
+---
+
+<a
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="social-card"
+  aria-label={`Visit Endorphina on ${title}`}
+  data-social={id}
+  style={`--card-bg: ${backgroundStyle}; --card-glow: ${glowColor};`}
+>
+  <div class="social-card__bg"></div>
+  <img
+    src={icon}
+    alt=""
+    class="social-card__icon"
+    width="48"
+    height="48"
+    loading="lazy"
+    aria-hidden="true"
+  />
+  <span class="social-card__title">{title}</span>
+</a>

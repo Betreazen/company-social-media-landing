@@ -1,0 +1,47 @@
+---
+import '../styles/variables.css';
+import '../styles/global.css';
+import '../styles/components.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Endorphina — Official Links',
+  description = 'Official social media links for Endorphina. Connect with us on LinkedIn, Instagram, Facebook, X, and YouTube.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Preload custom font -->
+    <link
+      rel="preload"
+      href="/assets/fonts/Benzin-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+
+  </head>
+  <body>
+    <div class="page">
+      <main class="main">
+        <slot name="content" />
+      </main>
+      <slot name="footer" />
+    </div>
+  </body>
+</html>

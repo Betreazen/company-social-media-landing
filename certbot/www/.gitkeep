@@ -1,0 +1,3 @@
+# This directory is used as the ACME webroot for Certbot.
+# Certbot places challenge files here for domain validation.
+# Do not delete this directory.

@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.gitignore
+.qoder
+.astro
+README.md
+docker-compose.yml
+Dockerfile
+certbot
+letsencrypt
+*.md
+.env
+.env.*

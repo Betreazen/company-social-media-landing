@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LogoBlock from '../components/LogoBlock.astro';
+import SocialGrid from '../components/SocialGrid.astro';
+import FooterContacts from '../components/FooterContacts.astro';
+---
+
+<BaseLayout>
+  <Fragment slot="content">
+    <LogoBlock />
+    <SocialGrid />
+  </Fragment>
+  <FooterContacts slot="footer" />
+</BaseLayout>
